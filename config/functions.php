@@ -1,14 +1,9 @@
 <?php
-define('DB_HOST', getenv('mysql-service'));
-define('DB_PORT', getenv('3306'));
-define('DB_USER', getenv('root'));
-define('DB_PASS', getenv('pekacu663'));
-define('DB_NAME', getenv('db_quizazra'));
  
-$host     = constant("DB_HOST");
-$username = constant("DB_USER");
-$password = constant("DB_PASS");;
-$database = constant("DB_NAME");
+$host     = "mariadb";
+$username = "adrianadhari";
+$password = "pekacu663";
+$database = "db_quizazra";
 $conn = mysqli_connect($host, $username, $password, $database);
 
 function register($data) {
