@@ -1,9 +1,10 @@
 <?php
  
-$host     = "mariadb";
-$username = "adrianadhari";
-$password = "pekacu663";
-$database = "db_quizazra";
+$host = getenv('DB_HOST');
+$port = getenv('DB_PORT');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+$database = getenv('DB_NAME');
 $conn = mysqli_connect($host, $username, $password, $database);
 
 function register($data) {
