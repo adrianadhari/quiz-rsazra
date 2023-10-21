@@ -1,7 +1,7 @@
 <?php
 
-$host = getenv("MYSQL_SERVICE_HOST");
-$port = getenv("MYSQL_SERVICE_PORT");
+$host = getenv("MARIADB_SERVICE_HOST");
+$port = getenv("MARIADB_SERVICE_PORT");
 $username = getenv('DB_USERNAME');
 $password = getenv('DB_PASSWORD');
 $database = getenv('DB_NAME');
